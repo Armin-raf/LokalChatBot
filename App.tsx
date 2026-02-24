@@ -1,4 +1,4 @@
-
+import BpWidgets from "./components/BpWidgets";
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -155,6 +155,7 @@ const App: React.FC = () => {
 
       <Footer onOpenLegal={setActiveLegalType} />
       <LegalOverlay type={activeLegalType} onClose={() => setActiveLegalType(null)} />
+      <BpWidgets />
     </div>
   );
 };
