@@ -155,7 +155,6 @@ const App: React.FC = () => {
 
       <Footer onOpenLegal={setActiveLegalType} />
       <LegalOverlay type={activeLegalType} onClose={() => setActiveLegalType(null)} />
-      <BpWidgets />
     </div>
   );
 };
